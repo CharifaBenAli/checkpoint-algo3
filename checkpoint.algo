@@ -1,0 +1,63 @@
+PROCEDURE Dot_product(v1,v2: ARRAY_OF FLOAT var ps :FLOAT)
+VAR
+    i,j:INTEGER;
+BEGIN
+    FOR i FROM 0 TO v1.length -1 STEP 1  DO
+        ps:=ps + v1[i]*v2[i];
+    END_FOR
+END
+PROCEDURE read_matrix : ARRAY_OF FLOAT[n][m];
+var
+i,j:INTEGER;
+BEGIN
+FOR i FROM TO n STEP DO
+FOR j FROM 0 TO m STEP 1  DO
+    Read(T[i][j]);
+END_FOR
+END_FOR
+END
+ALGORITHM Dot_product
+VAR
+    n,m:INTEGER;
+    p   : ARRAY_OF FLOAT[50][50];
+    ps : FLOAT:=0;
+BEGIN
+    REPEAT
+        Write ("enter value p");
+        Read(n);
+    UNTIL (n>1 n<=50 n% 2=0);
+    REPEAT
+    Write("enter number positif");
+    Read(n);
+    UNTIL(n>1 and n<=50);
+    read_matrix(n,m,p);
+    FOR i FROM min TO max STEP step  DO
+        Dot_product(p[i],p[i+1],[ps]]);
+        if (ps=0)then 
+        Write(p[i], And p[i+1], "are orthogonal")
+    END
+    FUNCTION Dot_product(v1,v2,ps:INTEGER) : INTEGER
+    VAR
+        n,m:INTEGER;
+        i,j:INTEGER;
+    BEGIN
+        FOR i FROM 0 TO v1.length -1 STEP 1  DO
+        ps:=ps + v1[i]*v2[i];
+    END_FOR
+  
+        RETURN ps ;
+    END
+    VAR 
+    PS:INTEGER;
+    BEGIN
+    Write("enter numbre ps");
+    Read("ps");
+    Write("p[i], And p[i+1], "are orthogonal"");
+    END
+
+
+
+
+
+
+
